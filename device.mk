@@ -43,7 +43,7 @@ PRODUCT_COPY_FILES += \
 # touch
 ################################################################################
 PRODUCT_COPY_FILES += \
-    device/nexell/drone/aw5306_ts.idc:system/usr/idc/aw5306_ts.idc
+    device/nexell/drone/gslX680.idc:system/usr/idc/gslX680.idc
 
 ################################################################################
 # storage
@@ -171,7 +171,7 @@ PRODUCT_PACKAGES += \
 # common
 PRODUCT_PROPERTY_OVERRIDES := \
 	wifi.interface=wlan0 \
-	ro.sf.lcd_density=213
+	ro.sf.lcd_density=160
 
 # 4330 openl ui property
 #PRODUCT_PROPERTY_OVERRIDES += \
