@@ -156,7 +156,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
 	audio.a2dp.default \
-	audio.usb.default
+	audio.usb.default \
+	audio.r_submix.default
 
 # Filesystem management tools
 PRODUCT_PACKAGES += \
