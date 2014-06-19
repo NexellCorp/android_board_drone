@@ -30,8 +30,8 @@ PRODUCT_COPY_FILES += \
 	device/nexell/drone/init.drone.usb.rc:root/init.drone.usb.rc \
 	device/nexell/drone/init.recovery.drone.rc:root/init.recovery.drone.rc \
 	device/nexell/drone/fstab.drone:root/fstab.drone \
-	device/nexell/drone/ueventd.drone.rc:root/ueventd.drone.rc
-
+	device/nexell/drone/ueventd.drone.rc:root/ueventd.drone.rc \
+	device/nexell/w7/bootanimation.zip:system/media/bootanimation.zip
 ################################################################################
 # key
 ################################################################################
