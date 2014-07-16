@@ -8,8 +8,7 @@
 #include <nx_camera_board.h>
 
 #include <SP2518.h>
-
-#include <SP0A19.h>
+#include <SP0838.h>
 
 namespace android {
 
@@ -36,7 +35,7 @@ NXCameraBoardSensor *get_board_camera_sensor(int id) {
 
     else if (id == 1) {
         if (!frontSensor) {
-            frontSensor = new SP0A19(nxp_v4l2_sensor1);
+            frontSensor = new SP0838(nxp_v4l2_sensor1);
             if (!frontSensor)
                 ALOGE("%s: cannot create FRONT Sensor", __func__);
         }
@@ -161,9 +160,9 @@ uint32_t get_board_camera_orientation(int cameraId)
 {
     switch (cameraId) {
     case 0:
-        return 90;
+        return 0;
     case 1:
-        return 270;
+        return 0;
     default:
         return 0;
     }

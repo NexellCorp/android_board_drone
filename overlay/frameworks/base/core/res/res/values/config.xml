@@ -89,4 +89,6 @@
 
     <bool name="config_enableWifiDisplay">true</bool>
 
+    <bool name="config_reverseDefaultRotation">true</bool>
+
 </resources>
