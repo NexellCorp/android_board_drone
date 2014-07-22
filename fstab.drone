@@ -7,4 +7,4 @@
 /dev/block/platform/dw_mmc.0/by-num/p2    /system             ext4      rw                                                    wait
 /dev/block/platform/dw_mmc.0/by-num/p3    /cache              ext4      noatime,nosuid,nodev,nomblk_io_submit,errors=panic    wait,check
 /dev/block/platform/dw_mmc.0/by-num/p7    /data               ext4      noatime,nosuid,nodev,nomblk_io_submit,errors=panic    wait,check
-/devices/platform/dw_mmc.1/mmc_host/mmc1/mmc1 /storage/sdcard1 auto     defaults                                              voldmanaged=sdcard1:auto,noemulatedsd
+/devices/platform/dw_mmc.2/mmc_host/mmc1/mmc1 /storage/sdcard1 auto     defaults                                              voldmanaged=sdcard1:auto,noemulatedsd
