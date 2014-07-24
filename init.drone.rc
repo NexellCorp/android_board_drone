@@ -22,15 +22,37 @@ on init
     mkdir /mnt/media_rw/sdcard1 0700 media_rw media_rw
     mkdir /storage/sdcard1 0700 root root
 
-    # usb disk
-    mkdir /storage/usbdisk 0666 system system
-    symlink /storage/usbdisk /usbdisk
-    symlink /storage/usbdisk /mnt/usbdisk
+    # usb disk1
+    mkdir /mnt/media_rw/usbdisk1 0700 media_rw media_rw
+    mkdir /storage/usbdisk1 0700 root root
 
     # usb disk2
-    mkdir /storage/usbdisk2 0666 system system
-    symlink /storage/usbdisk2 /usbdisk2
-    symlink /storage/usbdisk2 /mnt/usbdisk2
+    mkdir /mnt/media_rw/usbdisk2 0700 media_rw media_rw
+    mkdir /storage/usbdisk2 0700 root root
+
+    # usb disk3
+    mkdir /mnt/media_rw/usbdisk3 0700 media_rw media_rw
+    mkdir /storage/usbdisk3 0700 root root
+
+    # usb disk4
+    mkdir /mnt/media_rw/usbdisk4 0700 media_rw media_rw
+    mkdir /storage/usbdisk4 0700 root root
+
+    # usb disk5
+    mkdir /mnt/media_rw/usbdisk5 0700 media_rw media_rw
+    mkdir /storage/usbdisk5 0700 root root
+
+    # usb disk6
+    mkdir /mnt/media_rw/usbdisk6 0700 media_rw media_rw
+    mkdir /storage/usbdisk6 0700 root root
+
+    # usb disk7
+    mkdir /mnt/media_rw/usbdisk7 0700 media_rw media_rw
+    mkdir /storage/usbdisk7 0700 root root
+
+    # usb disk8
+    mkdir /mnt/media_rw/usbdisk8 0700 media_rw media_rw
+    mkdir /storage/usbdisk8 0700 root root
 
 on post-fs-data
     mkdir /data/media 0770 media_rw media_rw
@@ -103,6 +125,38 @@ service sdcard /system/bin/sdcard -u 1023 -g 1023 -l /data/media /mnt/shell/emul
     class late_start
 
 service fuse_sdcard1 /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/sdcard1 /storage/sdcard1
+    class late_start
+    disabled
+
+service fuse_usbdisk1 /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/usbdisk1 /storage/usbdisk1
+    class late_start
+    disabled
+
+service fuse_usbdisk2 /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/usbdisk2 /storage/usbdisk2
+    class late_start
+    disabled
+
+service fuse_usbdisk3 /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/usbdisk3 /storage/usbdisk3
+    class late_start
+    disabled
+
+service fuse_usbdisk4 /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/usbdisk4 /storage/usbdisk4
+    class late_start
+    disabled
+
+service fuse_usbdisk5 /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/usbdisk5 /storage/usbdisk5
+    class late_start
+    disabled
+
+service fuse_usbdisk6 /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/usbdisk6 /storage/usbdisk6
+    class late_start
+    disabled
+
+service fuse_usbdisk7 /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/usbdisk7 /storage/usbdisk7
+    class late_start
+    disabled
+
+service fuse_usbdisk8 /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/usbdisk8 /storage/usbdisk8
     class late_start
     disabled
 
