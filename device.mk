@@ -143,7 +143,7 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # 4330 delete nosdcard
 # PRODUCT_CHARACTERISTICS := tablet,nosdcard
-PRODUCT_CHARACTERISTICS := tablet
+PRODUCT_CHARACTERISTICS := tablet,usbstorage
 
 DEVICE_PACKAGE_OVERLAYS := \
 	device/nexell/drone/overlay
