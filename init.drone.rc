@@ -79,6 +79,12 @@ on boot
     # for hwc
     setprop hwc.scenario 2
 
+    # no tethering
+    setprop ro.tether.denied true
+
+    # no gps
+    setprop ro.gps.enabled false
+
     # for ota    
     setprop otaupdater.otaid nexell_pyrope_drone_kk
     setprop otaupdater.otaver 10000
