@@ -85,6 +85,9 @@ on boot
     # no gps
     setprop ro.gps.enabled false
 
+    # sd wakeup
+    setprop pm.sdwake.enabled true 
+
     # for ota    
     setprop otaupdater.otaid nexell_pyrope_drone_kk
     setprop otaupdater.otaver 10000
