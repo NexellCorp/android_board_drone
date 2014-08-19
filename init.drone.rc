@@ -227,3 +227,13 @@ service reporthwc /system/bin/report_hwc_scenario
 
 on property:hwc.scenario=*
     start reporthwc
+
+
+on property:hwc.scale=*
+    start reporthwc
+
+on property:hwc.resolution=*
+    start reporthwc
+
+on property:hwc.screendownsizing=*
+    start reporthwc
