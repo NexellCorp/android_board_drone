@@ -85,15 +85,15 @@ on boot
     # no gps
     setprop ro.gps.enabled false
 
-    # sd wakeup
-    setprop pm.sdwake.enabled true 
-
-    # for ota    
+    # for ota
     setprop otaupdater.otaid nexell_pyrope_drone_kk
     setprop otaupdater.otaver 10000
     setprop otaupdater.otatime 20140513-0800
     setprop otaupdater.sdcard.os cache
     setprop otaupdater.sdcard.recovery cache
+    # for nexell ota
+    setprop otaupdater.server http://210.219.52.221
+    setprop otaupdater.vendor NEXELL
 
     # override init.rc to keep plenty of large order chunks around
     # to improve allocation times
