@@ -211,6 +211,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
 	OTAUpdateCenter
 
+# miracast sink
+ PRODUCT_PACKAGES += \
+	Mira4U
+
 # wifi
 ifeq ($(BOARD_WIFI_VENDOR),realtek)
 $(call inherit-product-if-exists, hardware/realtek/wlan/config/p2p_supplicant.mk)
