@@ -108,14 +108,14 @@ EN_FFMPEG_EXTRACTOR := false
 EN_FFMPEG_AUDIO_DEC := false
 ifeq ($(EN_FFMPEG_EXTRACTOR),true)
 PRODUCT_COPY_FILES += \
-	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libavcodec-1.2.so:system/lib/libavcodec-1.2.so    \
-	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libavdevice-1.2.so:system/lib/libavdevice-1.2.so  \
-	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libavfilter-1.2.so:system/lib/libavfilter-1.2.so  \
-	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libavformat-1.2.so:system/lib/libavformat-1.2.so  \
-	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libavresample-1.2.so:system/lib/libavresample-1.2.so \
-	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libavutil-1.2.so:system/lib/libavutil-1.2.so      \
-	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libswresample-1.2.so:system/lib/libswresample-1.2.so \
-	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libswscale-1.2.so:system/lib/libswscale-1.2.so
+	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libavcodec-2.1.4.so:system/lib/libavcodec-2.1.4.so    \
+	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libavdevice-2.1.4.so:system/lib/libavdevice-2.1.4.so  \
+	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libavfilter-2.1.4.so:system/lib/libavfilter-2.1.4.so  \
+	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libavformat-2.1.4.so:system/lib/libavformat-2.1.4.so  \
+	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libavresample-2.1.4.so:system/lib/libavresample-2.1.4.so \
+	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libavutil-2.1.4.so:system/lib/libavutil-2.1.4.so      \
+	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libswresample-2.1.4.so:system/lib/libswresample-2.1.4.so \
+	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libswscale-2.1.4.so:system/lib/libswscale-2.1.4.so
 endif
 
 # wifi
