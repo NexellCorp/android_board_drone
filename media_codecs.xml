@@ -107,6 +107,7 @@ Only the three quirks included above are recognized at this point:
         <MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/wvc1" />
         <MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/vc1" />
         <MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/x-flv" />
+        <MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/x-vnd.on2.vp8" />
 
         <MediaCodec name="OMX.google.mpeg4.decoder" type="video/mp4v-es" />
         <MediaCodec name="OMX.google.h263.decoder" type="video/3gpp" />
@@ -116,12 +117,16 @@ Only the three quirks included above are recognized at this point:
     </Decoders>
 
     <Encoders>
-        <!-- Nexell Video Encoder -->
-        <MediaCodec name="OMX.NX.VIDEO_ENCODER" type="video/avc" />
         <MediaCodec name="OMX.google.amrnb.encoder" type="audio/3gpp" />
         <MediaCodec name="OMX.google.amrwb.encoder" type="audio/amr-wb" />
         <MediaCodec name="OMX.google.aac.encoder" type="audio/mp4a-latm" />
         <MediaCodec name="OMX.google.flac.encoder" type="audio/flac" />
+
+        <!-- Nexell Video Encoder -->
+        <MediaCodec name="OMX.NX.VIDEO_ENCODER" type="video/avc" />
+        <MediaCodec name="OMX.NX.VIDEO_ENCODER" type="video/3gpp" />
+        <MediaCodec name="OMX.NX.VIDEO_ENCODER" type="video/mp4v-es" />
+        
         <MediaCodec name="OMX.google.h263.encoder" type="video/3gpp" />
         <MediaCodec name="OMX.google.vp8.encoder" type="video/x-vnd.on2.vp8" />
         <MediaCodec name="OMX.google.vp9.encoder" type="video/x-vnd.on2.vp9" />
