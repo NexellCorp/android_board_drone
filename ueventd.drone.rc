@@ -17,3 +17,6 @@
 
 # hdmi-cec
 /dev/hdmi-cec             0666   system     system
+
+# gps
+/dev/ttyAMA1              0666   system     system

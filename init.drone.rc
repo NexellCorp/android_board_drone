@@ -82,8 +82,8 @@ on boot
     # no tethering
     setprop ro.tether.denied true
 
-    # no gps
-    setprop ro.gps.enabled false
+    # gps
+    setprop ro.gps.enabled true
 
     # sd wakeup
     setprop pm.sdwake.enabled true

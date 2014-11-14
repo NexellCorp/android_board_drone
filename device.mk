@@ -139,6 +139,17 @@ PRODUCT_COPY_FILES += \
   frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
   linux/pyrope/library/lib/ratecontrol/libnxvidrc_android.so:system/lib/libnxvidrc_android.so
 
+################################################################################
+# gps
+################################################################################
+PRODUCT_PACKAGES += \
+  gps.pyrope
+
+PRODUCT_COPY_FILES += \
+  frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
+  device/nexell/drone/gps/gps.conf:system/etc/gps.conf
+
+
 PRODUCT_AAPT_CONFIG := xlarge hdpi xhdpi large
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 

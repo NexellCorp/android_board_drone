@@ -57,6 +57,8 @@ BOARD_SENSOR_TYPE := general
 EN_FFMPEG_EXTRACTOR := false
 EN_FFMPEG_AUDIO_DEC := false
 
+# gps
+BOARD_HAS_GPS := true
 
 # wifi
 # broadcom bcm4329
