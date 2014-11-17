@@ -100,11 +100,11 @@ PRODUCT_COPY_FILES += \
 # modules 
 ################################################################################
 # ogl
-#PRODUCT_COPY_FILES += \
-	#hardware/nexell/pyrope/prebuilt/library/libVR.so:system/lib/libVR.so \
-	#hardware/nexell/pyrope/prebuilt/library/libEGL_vr.so:system/lib/egl/libEGL_vr.so \
-	#hardware/nexell/pyrope/prebuilt/library/libGLESv1_CM_vr.so:system/lib/egl/libGLESv1_CM_vr.so \
-	#hardware/nexell/pyrope/prebuilt/library/libGLESv2_vr.so:system/lib/egl/libGLESv2_vr.so
+PRODUCT_COPY_FILES += \
+	hardware/nexell/pyrope/prebuilt/library/libVR.so:system/lib/libVR.so \
+	hardware/nexell/pyrope/prebuilt/library/libEGL_vr.so:system/lib/egl/libEGL_vr.so \
+	hardware/nexell/pyrope/prebuilt/library/libGLESv1_CM_vr.so:system/lib/egl/libGLESv1_CM_vr.so \
+	hardware/nexell/pyrope/prebuilt/library/libGLESv2_vr.so:system/lib/egl/libGLESv2_vr.so
 
 PRODUCT_COPY_FILES += \
 	hardware/nexell/pyrope/prebuilt/modules/vr.ko:system/lib/modules/vr.ko
@@ -305,4 +305,4 @@ endif
 $(call inherit-product-if-exists, hardware/nexell/pyrope/pyrope.mk)
 
 # google gms
-$(call inherit-product-if-exists, vendor/google/android_vendor_google/gapps.mk)
+$(call inherit-product-if-exists, vendor/google/gapps/gapps.mk)
