@@ -83,7 +83,7 @@
                    bitRate="12000000"
                    width="1600"
                    height="1200"
-                   frameRate="8" />
+                   frameRate="15" />
 
             <Audio codec="aac"
                    bitRate="96000"
@@ -96,7 +96,7 @@
                    bitRate="8000000"
                    width="800"
                    height="600"
-                   frameRate="12" />
+                   frameRate="15" />
 
             <Audio codec="aac"
                    bitRate="96000"
@@ -109,7 +109,7 @@
                    bitRate="12000000"
                    width="1600"
                    height="1200"
-                   frameRate="8" />
+                   frameRate="15" />
 
             <!-- Audio settings are not used for timealpse video recording -->
             <Audio codec="aac"
@@ -123,7 +123,7 @@
                    bitRate="8000000"
                    width="800"
                    height="600"
-                   frameRate="12" />
+                   frameRate="15" />
 
             <!-- Audio settings are not used for timealpse video recording -->
             <Audio codec="aac"
@@ -146,7 +146,7 @@
                    bitRate="8000000"
                    width="608"
                    height="479"
-                   frameRate="12" />
+                   frameRate="15" />
 
             <Audio codec="aac"
                    bitRate="96000"
@@ -160,7 +160,7 @@
                    bitRate="3000000"
                    width="608"
                    height="479"
-                   frameRate="12" />
+                   frameRate="15" />
 
             <!-- Audio settings are not used for timealpse video recording -->
             <Audio codec="aac"
