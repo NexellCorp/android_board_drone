@@ -119,6 +119,12 @@ on boot
 # Set vr power policy as Coarse demand
 #    write /sys/devices/platform/vr.0/power_policy coarse_demand
 
+    write /sys/kernel/mm/ksm/pages_to_scan 100
+    write /sys/kernel/mm/ksm/sleep_millisecs 500
+    write /sys/kernel/mm/ksm/run 1
+
+    write /proc/sys/vm/swappiness 100
+
 on fs
     mount_all /fstab.drone
     setprop ro.crypto.fuse_sdcard true

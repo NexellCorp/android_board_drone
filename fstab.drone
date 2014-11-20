@@ -18,3 +18,4 @@
 /devices/platform/dwc_otg/usb2/2-1/2-1.2                /storage/usbdisk6    vfat      defaults    voldmanaged=usbdisk6:auto,noemulatedsd
 /devices/platform/dwc_otg/usb2/2-1/2-1.3                /storage/usbdisk7    vfat      defaults    voldmanaged=usbdisk7:auto,noemulatedsd
 /devices/platform/dwc_otg/usb2/2-1/2-1.4                /storage/usbdisk8    vfat      defaults    voldmanaged=usbdisk8:auto,noemulatedsd
+/dev/block/zram0                                        none                 swap      defaults    zramsize=80*1024*1024,swapprio=10000
