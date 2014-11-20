@@ -35,7 +35,7 @@ TARGET_RECOVERY_UI_LIB := librecovery_ui_drone
 #$(warning INSTALLED_RADIOIMAGE_TARGET: $(INSTALLED_RADIOIMAGE_TARGET))
 
 # certificate
-PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/nexell/security/drone/release
+#PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/nexell/security/drone/release
 
 # opengl
 BOARD_EGL_CFG := device/nexell/drone/egl.cfg
