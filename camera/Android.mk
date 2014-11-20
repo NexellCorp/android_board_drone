@@ -6,8 +6,8 @@ LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)
 LOCAL_C_INCLUDES += \
 	frameworks/native/include \
 	system/media/camera/include \
-	hardware/nexell/pyrope/include \
-	hardware/nexell/pyrope/libcamerasensor
+	hardware/samsung_slsi/slsiap/include \
+	hardware/samsung_slsi/slsiap/libcamerasensor
 LOCAL_SHARED_LIBRARIES := liblog libv4l2-nexell
 LOCAL_STATIC_LIBRARIES := libcamerasensor
 LOCAL_SRC_FILES := board-camera.cpp

@@ -1,7 +1,7 @@
 TARGET_BOARD_INFO_FILE := device/nexell/drone/board-info.txt
 
 
-TARGET_BOARD_PLATFORM 		 := pyrope
+TARGET_BOARD_PLATFORM 		 := slsiap
 TARGET_BOOTLOADER_BOARD_NAME := drone
 
 TARGET_CPU_ABI  := armeabi-v7a
@@ -11,6 +11,9 @@ TARGET_ARCH 	:= arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := cortex-a9
 ARCH_ARM_HAVE_TLS_REGISTER  := true
+
+# chip variation
+TARGET_CPU_VARIANT2 := s5p4418
 
 TARGET_NO_BOOTLOADER := false
 TARGET_NO_KERNEL 	 := false
@@ -100,7 +103,7 @@ endif
 # BOARD_HAS_RIL := true
 
 # HWC
-PYROPE_HWC_VERSION := 2
+SLSIAP_HWC_VERSION := 2
 
 # sepolicy
 BOARD_SEPOLICY_DIRS := \

@@ -89,7 +89,7 @@ on boot
     setprop pm.sdwake.enabled true
 
     # for ota
-    setprop otaupdater.otaid nexell_pyrope_drone_kk
+    setprop otaupdater.otaid nexell_slsiap_drone2_kk
     setprop otaupdater.otaver 10000
     setprop otaupdater.otatime 20140513-0800
     setprop otaupdater.sdcard.os cache

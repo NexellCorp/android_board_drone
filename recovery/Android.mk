@@ -14,10 +14,10 @@ include $(CLEAR_VARS)
 LOCAL_MODULE_TAGS := optional
 LOCAL_C_INCLUDES += \
 	bootable/recovery \
-	hardware/nexell/pyrope/spi_update
+	hardware/samsung_slsi/slsiap/spi_update
 LOCAL_SRC_FILES := \
-	../../../../hardware/nexell/pyrope/spi_update/spieeprom.c \
-	../../../../hardware/nexell/pyrope/spi_update/update.c \
+	../../../../hardware/samsung_slsi/slsiap/spi_update/spieeprom.c \
+	../../../../hardware/samsung_slsi/slsiap/spi_update/update.c \
 	recovery_updater.c
 
 LOCAL_MODULE := librecovery_updater_drone

@@ -20,7 +20,7 @@ PRODUCT_COPY_FILES += \
 # overlay apps
 ################################################################################
 #PRODUCT_COPY_FILES += \
-	#hardware/nexell/pyrope/overlay-apps/GooglePinyinIME.apk:system/app/PinyinIME.apk
+	#hardware/samsung_slsi/slsiap/overlay-apps/GooglePinyinIME.apk:system/app/PinyinIME.apk
 
 ################################################################################
 # init
@@ -78,7 +78,7 @@ PRODUCT_PACKAGES += \
 # camera
 ################################################################################
 PRODUCT_PACKAGES += \
-	camera.pyrope
+	camera.slsiap
 
 ################################################################################
 # hwc executable
@@ -91,37 +91,37 @@ PRODUCT_PACKAGES += \
 ################################################################################
 # ogl
 PRODUCT_COPY_FILES += \
-	hardware/nexell/pyrope/prebuilt/library/libVR.so:system/lib/libVR.so \
-	hardware/nexell/pyrope/prebuilt/library/libEGL_vr.so:system/lib/egl/libEGL_vr.so \
-	hardware/nexell/pyrope/prebuilt/library/libGLESv1_CM_vr.so:system/lib/egl/libGLESv1_CM_vr.so \
-	hardware/nexell/pyrope/prebuilt/library/libGLESv2_vr.so:system/lib/egl/libGLESv2_vr.so
+	hardware/samsung_slsi/slsiap/prebuilt/library/libVR.so:system/lib/libVR.so \
+	hardware/samsung_slsi/slsiap/prebuilt/library/libEGL_vr.so:system/lib/egl/libEGL_vr.so \
+	hardware/samsung_slsi/slsiap/prebuilt/library/libGLESv1_CM_vr.so:system/lib/egl/libGLESv1_CM_vr.so \
+	hardware/samsung_slsi/slsiap/prebuilt/library/libGLESv2_vr.so:system/lib/egl/libGLESv2_vr.so
 
 PRODUCT_COPY_FILES += \
-	hardware/nexell/pyrope/prebuilt/modules/vr.ko:system/lib/modules/vr.ko
+	hardware/samsung_slsi/slsiap/prebuilt/modules/vr.ko:system/lib/modules/vr.ko
 
 # coda
 PRODUCT_COPY_FILES += \
-	hardware/nexell/pyrope/prebuilt/modules/nx_vpu.ko:system/lib/modules/nx_vpu.ko
+	hardware/samsung_slsi/slsiap/prebuilt/modules/nx_vpu.ko:system/lib/modules/nx_vpu.ko
 
 # ffmpeg libraries
 EN_FFMPEG_EXTRACTOR := false
 EN_FFMPEG_AUDIO_DEC := false
 ifeq ($(EN_FFMPEG_EXTRACTOR),true)
 PRODUCT_COPY_FILES += \
-	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libavcodec-2.1.4.so:system/lib/libavcodec-2.1.4.so    \
-	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libavdevice-2.1.4.so:system/lib/libavdevice-2.1.4.so  \
-	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libavfilter-2.1.4.so:system/lib/libavfilter-2.1.4.so  \
-	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libavformat-2.1.4.so:system/lib/libavformat-2.1.4.so  \
-	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libavresample-2.1.4.so:system/lib/libavresample-2.1.4.so \
-	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libavutil-2.1.4.so:system/lib/libavutil-2.1.4.so      \
-	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libswresample-2.1.4.so:system/lib/libswresample-2.1.4.so \
-	hardware/nexell/pyrope/omx/codec/ffmpeg/libs/libswscale-2.1.4.so:system/lib/libswscale-2.1.4.so
+	hardware/samsung_slsi/slsiap/omx/codec/ffmpeg/libs/libavcodec-2.1.4.so:system/lib/libavcodec-2.1.4.so    \
+	hardware/samsung_slsi/slsiap/omx/codec/ffmpeg/libs/libavdevice-2.1.4.so:system/lib/libavdevice-2.1.4.so  \
+	hardware/samsung_slsi/slsiap/omx/codec/ffmpeg/libs/libavfilter-2.1.4.so:system/lib/libavfilter-2.1.4.so  \
+	hardware/samsung_slsi/slsiap/omx/codec/ffmpeg/libs/libavformat-2.1.4.so:system/lib/libavformat-2.1.4.so  \
+	hardware/samsung_slsi/slsiap/omx/codec/ffmpeg/libs/libavresample-2.1.4.so:system/lib/libavresample-2.1.4.so \
+	hardware/samsung_slsi/slsiap/omx/codec/ffmpeg/libs/libavutil-2.1.4.so:system/lib/libavutil-2.1.4.so      \
+	hardware/samsung_slsi/slsiap/omx/codec/ffmpeg/libs/libswresample-2.1.4.so:system/lib/libswresample-2.1.4.so \
+	hardware/samsung_slsi/slsiap/omx/codec/ffmpeg/libs/libswscale-2.1.4.so:system/lib/libswscale-2.1.4.so
 endif
 
 # wifi
 
 PRODUCT_COPY_FILES += \
-    hardware/nexell/pyrope/prebuilt/modules/wlan.ko:/system/lib/modules/wlan.ko
+    hardware/samsung_slsi/slsiap/prebuilt/modules/wlan.ko:/system/lib/modules/wlan.ko
 
 ################################################################################
 # generic
@@ -137,7 +137,7 @@ PRODUCT_COPY_FILES += \
   frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
   frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
   frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
-  linux/pyrope/library/lib/ratecontrol/libnxvidrc_android.so:system/lib/libnxvidrc_android.so
+  linux/platform/s5p4418/library/lib/ratecontrol/libnxvidrc_android.so:system/lib/libnxvidrc_android.so
 
 PRODUCT_AAPT_CONFIG := xlarge hdpi xhdpi large
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
@@ -228,8 +228,8 @@ endif
 
 # 3G/LTE
 
-# call pyrope
-$(call inherit-product-if-exists, hardware/nexell/pyrope/pyrope.mk)
+# call slsiap
+$(call inherit-product-if-exists, hardware/samsung_slsi/slsiap/slsiap.mk)
 
 # google gms
 #$(call inherit-product-if-exists, vendor/google/gapps/device-partial.mk)
