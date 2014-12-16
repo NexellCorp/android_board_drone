@@ -97,17 +97,17 @@ Only the three quirks included above are recognized at this point:
         <MediaCodec name="OMX.google.gsm.decoder" type="audio/gsm" />
 
         <!-- Nexell Video Decoder -->
-        <!--<MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/3gpp" />-->
-        <!--<MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/avc" />-->
-        <!--<MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/mpeg2" />-->
-        <!--<MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/mp4v-es" />-->
-        <!--<MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/mp43" />-->
-        <!--<MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/x-pn-realvideo" />-->
-        <!--<MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/x-ms-wmv" />-->
-        <!--<MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/wvc1" />-->
-        <!--<MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/vc1" />-->
-        <!--<MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/x-flv" />-->
-        <!--<MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/x-vnd.on2.vp8" />-->
+        <MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/3gpp" />
+        <MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/avc" />
+        <MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/mpeg2" />
+        <MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/mp4v-es" />
+        <MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/mp43" />
+        <MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/x-pn-realvideo" />
+        <MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/x-ms-wmv" />
+        <MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/wvc1" />
+        <MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/vc1" />
+        <MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/x-flv" />
+        <MediaCodec name="OMX.NX.VIDEO_DECODER" type="video/x-vnd.on2.vp8" />
 
         <MediaCodec name="OMX.google.mpeg4.decoder" type="video/mp4v-es" />
         <MediaCodec name="OMX.google.h263.decoder" type="video/3gpp" />
